@@ -40,7 +40,6 @@
             this.TZIP = new System.Windows.Forms.TextBox();
             this.lblNumber = new System.Windows.Forms.Label();
             this.TNumber = new System.Windows.Forms.TextBox();
-            this.pcbox3 = new System.Windows.Forms.PictureBox();
             this.lbl3 = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.TEmail = new System.Windows.Forms.TextBox();
@@ -77,12 +76,21 @@
             this.TQ4 = new System.Windows.Forms.TextBox();
             this.TQ5 = new System.Windows.Forms.TextBox();
             this.lblinstruction5 = new System.Windows.Forms.Label();
+            this.lblasterisk1 = new System.Windows.Forms.Label();
+            this.lblasterisk2 = new System.Windows.Forms.Label();
+            this.lblasterisk3 = new System.Windows.Forms.Label();
+            this.lblasterisk4 = new System.Windows.Forms.Label();
+            this.lblasterisk5 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.pcbox3 = new System.Windows.Forms.PictureBox();
+            this.RTboxResume = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pcbox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbox3)).BeginInit();
             this.SuspendLayout();
             // 
             // pcbox1
@@ -135,7 +143,7 @@
             this.pcbox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.pcbox2.Location = new System.Drawing.Point(-4, 81);
             this.pcbox2.Name = "pcbox2";
-            this.pcbox2.Size = new System.Drawing.Size(1008, 10);
+            this.pcbox2.Size = new System.Drawing.Size(963, 10);
             this.pcbox2.TabIndex = 4;
             this.pcbox2.TabStop = false;
             // 
@@ -197,15 +205,6 @@
             this.TNumber.Size = new System.Drawing.Size(163, 20);
             this.TNumber.TabIndex = 11;
             // 
-            // pcbox3
-            // 
-            this.pcbox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pcbox3.Location = new System.Drawing.Point(-16, 171);
-            this.pcbox3.Name = "pcbox3";
-            this.pcbox3.Size = new System.Drawing.Size(1008, 10);
-            this.pcbox3.TabIndex = 12;
-            this.pcbox3.TabStop = false;
-            // 
             // lbl3
             // 
             this.lbl3.AutoSize = true;
@@ -260,7 +259,7 @@
             this.pcbox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.pcbox4.Location = new System.Drawing.Point(-30, 348);
             this.pcbox4.Name = "pcbox4";
-            this.pcbox4.Size = new System.Drawing.Size(1008, 10);
+            this.pcbox4.Size = new System.Drawing.Size(989, 10);
             this.pcbox4.TabIndex = 18;
             this.pcbox4.TabStop = false;
             // 
@@ -359,10 +358,12 @@
             // 
             // pcbox5
             // 
+            this.pcbox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pcbox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pcbox5.Location = new System.Drawing.Point(-60, 478);
+            this.pcbox5.Location = new System.Drawing.Point(-60, 480);
             this.pcbox5.Name = "pcbox5";
-            this.pcbox5.Size = new System.Drawing.Size(1008, 10);
+            this.pcbox5.Size = new System.Drawing.Size(1024, 10);
             this.pcbox5.TabIndex = 29;
             this.pcbox5.TabStop = false;
             // 
@@ -468,7 +469,7 @@
             this.pcbox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.pcbox6.Location = new System.Drawing.Point(537, 177);
             this.pcbox6.Name = "pcbox6";
-            this.pcbox6.Size = new System.Drawing.Size(13, 181);
+            this.pcbox6.Size = new System.Drawing.Size(10, 181);
             this.pcbox6.TabIndex = 41;
             this.pcbox6.TabStop = false;
             // 
@@ -529,12 +530,106 @@
             this.lblinstruction5.TabIndex = 48;
             this.lblinstruction5.Text = "Type 5 qualification, place N\\A to the boxes with no input.";
             // 
+            // lblasterisk1
+            // 
+            this.lblasterisk1.AutoSize = true;
+            this.lblasterisk1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblasterisk1.Location = new System.Drawing.Point(564, 213);
+            this.lblasterisk1.Name = "lblasterisk1";
+            this.lblasterisk1.Size = new System.Drawing.Size(13, 16);
+            this.lblasterisk1.TabIndex = 49;
+            this.lblasterisk1.Text = "*";
+            // 
+            // lblasterisk2
+            // 
+            this.lblasterisk2.AutoSize = true;
+            this.lblasterisk2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblasterisk2.Location = new System.Drawing.Point(564, 239);
+            this.lblasterisk2.Name = "lblasterisk2";
+            this.lblasterisk2.Size = new System.Drawing.Size(13, 16);
+            this.lblasterisk2.TabIndex = 50;
+            this.lblasterisk2.Text = "*";
+            // 
+            // lblasterisk3
+            // 
+            this.lblasterisk3.AutoSize = true;
+            this.lblasterisk3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblasterisk3.Location = new System.Drawing.Point(564, 265);
+            this.lblasterisk3.Name = "lblasterisk3";
+            this.lblasterisk3.Size = new System.Drawing.Size(13, 16);
+            this.lblasterisk3.TabIndex = 51;
+            this.lblasterisk3.Text = "*";
+            // 
+            // lblasterisk4
+            // 
+            this.lblasterisk4.AutoSize = true;
+            this.lblasterisk4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblasterisk4.Location = new System.Drawing.Point(564, 291);
+            this.lblasterisk4.Name = "lblasterisk4";
+            this.lblasterisk4.Size = new System.Drawing.Size(13, 16);
+            this.lblasterisk4.TabIndex = 52;
+            this.lblasterisk4.Text = "*";
+            // 
+            // lblasterisk5
+            // 
+            this.lblasterisk5.AutoSize = true;
+            this.lblasterisk5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblasterisk5.Location = new System.Drawing.Point(564, 318);
+            this.lblasterisk5.Name = "lblasterisk5";
+            this.lblasterisk5.Size = new System.Drawing.Size(13, 16);
+            this.lblasterisk5.TabIndex = 53;
+            this.lblasterisk5.Text = "*";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(29, 588);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 28);
+            this.button1.TabIndex = 54;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(29, 634);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 28);
+            this.button2.TabIndex = 55;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // pcbox3
+            // 
+            this.pcbox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pcbox3.Location = new System.Drawing.Point(-3, 173);
+            this.pcbox3.Name = "pcbox3";
+            this.pcbox3.Size = new System.Drawing.Size(961, 10);
+            this.pcbox3.TabIndex = 56;
+            this.pcbox3.TabStop = false;
+            // 
+            // RTboxResume
+            // 
+            this.RTboxResume.Location = new System.Drawing.Point(4, 377);
+            this.RTboxResume.Name = "RTboxResume";
+            this.RTboxResume.Size = new System.Drawing.Size(114, 113);
+            this.RTboxResume.TabIndex = 57;
+            this.RTboxResume.Text = "";
+            this.RTboxResume.Visible = false;
+            // 
             // ResumePDF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(949, 681);
+            this.ClientSize = new System.Drawing.Size(960, 681);
+            this.Controls.Add(this.RTboxResume);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lblasterisk5);
+            this.Controls.Add(this.lblasterisk4);
+            this.Controls.Add(this.lblasterisk3);
+            this.Controls.Add(this.lblasterisk2);
+            this.Controls.Add(this.lblasterisk1);
             this.Controls.Add(this.lblinstruction5);
             this.Controls.Add(this.TQ5);
             this.Controls.Add(this.TQ4);
@@ -580,18 +675,19 @@
             this.Controls.Add(this.pcbox1);
             this.Controls.Add(this.pcbox2);
             this.Controls.Add(this.lbl2);
-            this.Controls.Add(this.pcbox3);
             this.Controls.Add(this.pcbox4);
             this.Controls.Add(this.pcbox5);
+            this.Controls.Add(this.pcbox3);
             this.Controls.Add(this.pcbox6);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "ResumePDF";
             this.Text = "PDF Resume Generator";
             ((System.ComponentModel.ISupportInitialize)(this.pcbox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -611,7 +707,6 @@
         private System.Windows.Forms.TextBox TZIP;
         private System.Windows.Forms.Label lblNumber;
         private System.Windows.Forms.TextBox TNumber;
-        private System.Windows.Forms.PictureBox pcbox3;
         private System.Windows.Forms.Label lbl3;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.TextBox TEmail;
@@ -648,6 +743,15 @@
         private System.Windows.Forms.TextBox TQ4;
         private System.Windows.Forms.TextBox TQ5;
         private System.Windows.Forms.Label lblinstruction5;
+        private System.Windows.Forms.Label lblasterisk1;
+        private System.Windows.Forms.Label lblasterisk2;
+        private System.Windows.Forms.Label lblasterisk3;
+        private System.Windows.Forms.Label lblasterisk4;
+        private System.Windows.Forms.Label lblasterisk5;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox pcbox3;
+        private System.Windows.Forms.RichTextBox RTboxResume;
     }
 }
 
