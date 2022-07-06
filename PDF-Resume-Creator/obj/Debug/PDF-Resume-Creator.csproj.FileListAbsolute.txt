@@ -9,3 +9,6 @@ c:\users\santos\documents\visual studio 2013\Projects\PDF-Resume-Creator\PDF-Res
 c:\users\santos\documents\visual studio 2013\Projects\PDF-Resume-Creator\PDF-Resume-Creator\obj\Debug\PDF-Resume-Creator.pdb
 c:\users\santos\documents\visual studio 2013\Projects\PDF-Resume-Creator\PDF-Resume-Creator\bin\Debug\Newtonsoft.Json.dll
 c:\users\santos\documents\visual studio 2013\Projects\PDF-Resume-Creator\PDF-Resume-Creator\bin\Debug\Newtonsoft.Json.xml
+c:\users\santos\documents\visual studio 2013\Projects\PDF-Resume-Creator\PDF-Resume-Creator\bin\Debug\BouncyCastle.Crypto.dll
+c:\users\santos\documents\visual studio 2013\Projects\PDF-Resume-Creator\PDF-Resume-Creator\bin\Debug\itextsharp.dll
+c:\users\santos\documents\visual studio 2013\Projects\PDF-Resume-Creator\PDF-Resume-Creator\bin\Debug\itextsharp.xml

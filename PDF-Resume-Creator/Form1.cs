@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
 
 namespace PDF_Resume_Creator
 {
@@ -91,10 +93,37 @@ namespace PDF_Resume_Creator
 
             public override string ToString()
             {
-                return string.Format("RESUME:\n \nName: {0} {1} {2}, \nAddress: {3} {4}, \nEmail: {5}, \nPhone Number: {6}, \nObjectives: {7}, \nCollege: {8}, \nSenior High School: {9}, \nJunior High School: {10}, \nCompany: {11}, \n* {12}, \nCompany: {13}, \n* {14}, \nCompany: {15}, \n* {16}, \nSkills: {17}",
+                return string.Format("RESUME:\n \nName: {0} {1} {2} \nAddress: {3} {4} \nEmail: {5} \nPhone Number: {6} \n\nObjectives: {7} \n\nCollege: {8} \nSenior High School: {9} \nJunior High School: {10} \n\nCompany: {11} \n* {12}, \nCompany: {13} \n* {14} \nCompany: {15} \n* {16} \n\nSkills: {17}",
                         FirstName, MiddleInitital, Surname, Address, ZIP, Email, PhoneNumber, Objectives, College, 
                         SeniorHS, JuniorHS, Company1, CompanyDes1, Company2, CompanyDes2, Company3, CompanyDes3, string.Join(",", Skills.ToArray()));
             }
+        }
+
+        private void btnsavePDF_Click(object sender, EventArgs e)
+        {
+            string file_name = TSName.Text + "_" + TFName.Text;
+            using (SaveFileDialog save = new SaveFileDialog() { Filter = "PDF file|*.pdf", ValidateNames = true, FileName = file_name})
+            {
+                if (save.ShowDialog() == DialogResult.OK)
+                {
+                    iTextSharp.text.Document doc = new iTextSharp.text.Document(PageSize.LETTER);
+                    try
+                    {
+                        PdfWriter.GetInstance(doc, new FileStream(save.FileName, FileMode.Create));
+                        doc.Open();
+                        doc.Add(new iTextSharp.text.Paragraph(RTboxResume.Text));
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    finally
+                    {
+                        doc.Close();
+                    }
+                }
+            }
+            MessageBox.Show("File Saved");
         }
     }
 }

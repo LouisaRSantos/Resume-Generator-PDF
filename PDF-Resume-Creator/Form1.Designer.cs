@@ -589,7 +589,7 @@
             this.btnsaveJSON.Name = "btnsaveJSON";
             this.btnsaveJSON.Size = new System.Drawing.Size(75, 28);
             this.btnsaveJSON.TabIndex = 54;
-            this.btnsaveJSON.Text = "Save";
+            this.btnsaveJSON.Text = "JSON";
             this.btnsaveJSON.UseVisualStyleBackColor = true;
             this.btnsaveJSON.Click += new System.EventHandler(this.btnsaveJSON_Click);
             // 
@@ -599,8 +599,9 @@
             this.btnsavePDF.Name = "btnsavePDF";
             this.btnsavePDF.Size = new System.Drawing.Size(75, 28);
             this.btnsavePDF.TabIndex = 55;
-            this.btnsavePDF.Text = "Save";
+            this.btnsavePDF.Text = "PDF";
             this.btnsavePDF.UseVisualStyleBackColor = true;
+            this.btnsavePDF.Click += new System.EventHandler(this.btnsavePDF_Click);
             // 
             // pcbox3
             // 
