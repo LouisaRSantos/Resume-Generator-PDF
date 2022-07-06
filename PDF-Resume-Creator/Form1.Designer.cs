@@ -90,6 +90,8 @@
             this.lblinstruction6 = new System.Windows.Forms.Label();
             this.lblinstruction7 = new System.Windows.Forms.Label();
             this.lblinstruction8 = new System.Windows.Forms.Label();
+            this.lblinstruction9 = new System.Windows.Forms.Label();
+            this.lblinstruction10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pcbox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbox4)).BeginInit();
@@ -585,9 +587,9 @@
             // 
             // btnsaveJSON
             // 
-            this.btnsaveJSON.Location = new System.Drawing.Point(29, 588);
+            this.btnsaveJSON.Location = new System.Drawing.Point(14, 596);
             this.btnsaveJSON.Name = "btnsaveJSON";
-            this.btnsaveJSON.Size = new System.Drawing.Size(75, 28);
+            this.btnsaveJSON.Size = new System.Drawing.Size(92, 28);
             this.btnsaveJSON.TabIndex = 54;
             this.btnsaveJSON.Text = "JSON";
             this.btnsaveJSON.UseVisualStyleBackColor = true;
@@ -595,9 +597,9 @@
             // 
             // btnsavePDF
             // 
-            this.btnsavePDF.Location = new System.Drawing.Point(29, 634);
+            this.btnsavePDF.Location = new System.Drawing.Point(14, 643);
             this.btnsavePDF.Name = "btnsavePDF";
-            this.btnsavePDF.Size = new System.Drawing.Size(75, 28);
+            this.btnsavePDF.Size = new System.Drawing.Size(92, 28);
             this.btnsavePDF.TabIndex = 55;
             this.btnsavePDF.Text = "PDF";
             this.btnsavePDF.UseVisualStyleBackColor = true;
@@ -619,6 +621,7 @@
             this.RTboxResume.Size = new System.Drawing.Size(108, 432);
             this.RTboxResume.TabIndex = 57;
             this.RTboxResume.Text = "";
+            this.RTboxResume.Visible = false;
             // 
             // TMInitial
             // 
@@ -664,12 +667,35 @@
             this.lblinstruction8.TabIndex = 62;
             this.lblinstruction8.Text = "SN";
             // 
+            // lblinstruction9
+            // 
+            this.lblinstruction9.AutoSize = true;
+            this.lblinstruction9.Font = new System.Drawing.Font("Constantia", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblinstruction9.Location = new System.Drawing.Point(249, 97);
+            this.lblinstruction9.Name = "lblinstruction9";
+            this.lblinstruction9.Size = new System.Drawing.Size(164, 13);
+            this.lblinstruction9.TabIndex = 63;
+            this.lblinstruction9.Text = "Please CAPSLOCK your NAME";
+            // 
+            // lblinstruction10
+            // 
+            this.lblinstruction10.AutoSize = true;
+            this.lblinstruction10.BackColor = System.Drawing.Color.LightSalmon;
+            this.lblinstruction10.Font = new System.Drawing.Font("Constantia", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblinstruction10.Location = new System.Drawing.Point(11, 570);
+            this.lblinstruction10.Name = "lblinstruction10";
+            this.lblinstruction10.Size = new System.Drawing.Size(51, 15);
+            this.lblinstruction10.TabIndex = 64;
+            this.lblinstruction10.Text = "Save as:";
+            // 
             // ResumePDF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(959, 704);
+            this.Controls.Add(this.lblinstruction10);
+            this.Controls.Add(this.lblinstruction9);
             this.Controls.Add(this.lblinstruction8);
             this.Controls.Add(this.lblinstruction7);
             this.Controls.Add(this.lblinstruction6);
@@ -810,6 +836,8 @@
         private System.Windows.Forms.Label lblinstruction6;
         private System.Windows.Forms.Label lblinstruction7;
         private System.Windows.Forms.Label lblinstruction8;
+        private System.Windows.Forms.Label lblinstruction9;
+        private System.Windows.Forms.Label lblinstruction10;
     }
 }
 
