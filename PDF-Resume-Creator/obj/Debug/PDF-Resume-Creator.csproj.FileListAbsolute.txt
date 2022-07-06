@@ -1,1 +1,9 @@
 c:\users\santos\documents\visual studio 2013\Projects\PDF-Resume-Creator\PDF-Resume-Creator\bin\Debug\PDF-Resume-Creator.exe.config
+c:\users\santos\documents\visual studio 2013\Projects\PDF-Resume-Creator\PDF-Resume-Creator\bin\Debug\PDF-Resume-Creator.exe
+c:\users\santos\documents\visual studio 2013\Projects\PDF-Resume-Creator\PDF-Resume-Creator\bin\Debug\PDF-Resume-Creator.pdb
+c:\users\santos\documents\visual studio 2013\Projects\PDF-Resume-Creator\PDF-Resume-Creator\obj\Debug\PDF-Resume-Creator.csprojResolveAssemblyReference.cache
+c:\users\santos\documents\visual studio 2013\Projects\PDF-Resume-Creator\PDF-Resume-Creator\obj\Debug\PDF_Resume_Creator.ResumePDF.resources
+c:\users\santos\documents\visual studio 2013\Projects\PDF-Resume-Creator\PDF-Resume-Creator\obj\Debug\PDF_Resume_Creator.Properties.Resources.resources
+c:\users\santos\documents\visual studio 2013\Projects\PDF-Resume-Creator\PDF-Resume-Creator\obj\Debug\PDF-Resume-Creator.csproj.GenerateResource.Cache
+c:\users\santos\documents\visual studio 2013\Projects\PDF-Resume-Creator\PDF-Resume-Creator\obj\Debug\PDF-Resume-Creator.exe
+c:\users\santos\documents\visual studio 2013\Projects\PDF-Resume-Creator\PDF-Resume-Creator\obj\Debug\PDF-Resume-Creator.pdb
