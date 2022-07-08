@@ -23,6 +23,7 @@ namespace PDF_Resume_Creator
 
         private void btnsaveJSON_Click(object sender, EventArgs e)
         {
+            RTboxResume.Text = "";
             string file_name = TSName.Text + "_" + TFName.Text;
             try
             {
@@ -62,13 +63,12 @@ namespace PDF_Resume_Creator
                 json = File.ReadAllText(@"C:\Users\Santos\Documents\json\" + file_name + ".json");
                 Resume resultResume = JsonConvert.DeserializeObject<Resume>(json);
                 RTboxResume.Text = resultResume.ToString();
-
             }
             catch 
             {
                 MessageBox.Show("Incomplete");
             }
-
+            
         }
         class Resume
         {
@@ -93,25 +93,48 @@ namespace PDF_Resume_Creator
 
             public override string ToString()
             {
-                return string.Format("RESUME:\n \nName: {0} {1} {2} \nAddress: {3} {4} \nEmail: {5} \nPhone Number: {6} \n\nObjectives: {7} \n\nCollege: {8} \nSenior High School: {9} \nJunior High School: {10} \n\nCompany: {11} \n* {12}, \nCompany: {13} \n* {14} \nCompany: {15} \n* {16} \n\nSkills: {17}",
+                return string.Format("\nName: {0} {1} {2} \nAddress: {3} {4} \nEmail: {5} \nPhone Number: {6} \n\nObjectives: {7} \n\nEducational Attainment \nCollege: {8} \nSenior High School: {9} \nJunior High School: {10} \n\nExperiences \nCompany: {11} \n* {12} \nCompany: {13} \n* {14} \nCompany: {15} \n* {16} \n\nSkills: {17}",
                         FirstName, MiddleInitital, Surname, Address, ZIP, Email, PhoneNumber, Objectives, College, 
-                        SeniorHS, JuniorHS, Company1, CompanyDes1, Company2, CompanyDes2, Company3, CompanyDes3, string.Join(",", Skills.ToArray()));
+                        SeniorHS, JuniorHS, Company1, CompanyDes1, Company2, CompanyDes2, Company3, CompanyDes3, string.Join(" ", Skills.ToArray()));
             }
         }
 
         private void btnsavePDF_Click(object sender, EventArgs e)
         {
+            string image_name = txtboxPic.Text;
             string file_name = TSName.Text + "_" + TFName.Text;
             using (SaveFileDialog save = new SaveFileDialog() { Filter = "PDF file|*.pdf", ValidateNames = true, FileName = file_name})
             {
-                if (save.ShowDialog() == DialogResult.OK)
+                if (RTboxResume.Text == "")
                 {
-                    iTextSharp.text.Document doc = new iTextSharp.text.Document(PageSize.LETTER);
+                    MessageBox.Show("No file to save.");
+                }
+                else if (save.ShowDialog() == DialogResult.OK)
+                {
+                    Document doc = new Document(PageSize.LETTER, 10f, 10f, 10f, 0f);
                     try
                     {
                         PdfWriter.GetInstance(doc, new FileStream(save.FileName, FileMode.Create));
                         doc.Open();
-                        doc.Add(new iTextSharp.text.Paragraph(RTboxResume.Text));
+                        System.Drawing.Image pImage = System.Drawing.Image.FromFile(@"C:\Users\Santos\Documents\json\" + image_name);
+
+                        iTextSharp.text.Image ItextImage = iTextSharp.text.Image.GetInstance(pImage, System.Drawing.Imaging.ImageFormat.Jpeg);
+                        ItextImage.ScalePercent(15f);
+                        ItextImage.SetAbsolutePosition(doc.PageSize.Width - 50f - 80f, doc.PageSize.Height - 30f - 100f);
+
+                        doc.Add(ItextImage);
+
+                        iTextSharp.text.Font pfont1 = FontFactory.GetFont(iTextSharp.text.Font.FontFamily.TIMES_ROMAN.ToString(), 20,
+                            iTextSharp.text.Font.BOLD, iTextSharp.text.BaseColor.BLACK);
+
+                        Paragraph pgraph1 = new Paragraph(TSName.Text + ", " + TFName.Text + " " + TMInitial.Text, pfont1);
+                        pgraph1.Alignment = Element.ALIGN_LEFT;
+                        doc.Add(pgraph1);
+
+                        pfont1 = FontFactory.GetFont(iTextSharp.text.Font.FontFamily.TIMES_ROMAN.ToString(), 14,
+                            iTextSharp.text.Font.NORMAL, iTextSharp.text.BaseColor.BLACK);
+                        Paragraph pgraph2 = new iTextSharp.text.Paragraph(RTboxResume.Text, pfont1);
+                        doc.Add(pgraph2);
                     }
                     catch (Exception ex)
                     {
@@ -120,10 +143,15 @@ namespace PDF_Resume_Creator
                     finally
                     {
                         doc.Close();
+                        MessageBox.Show("File Saved");
                     }
                 }
             }
-            MessageBox.Show("File Saved");
+        }
+
+        private void RTboxResume_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

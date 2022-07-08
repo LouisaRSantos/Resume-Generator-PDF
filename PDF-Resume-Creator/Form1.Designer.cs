@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ResumePDF));
             this.pcbox1 = new System.Windows.Forms.PictureBox();
             this.lbl1 = new System.Windows.Forms.Label();
-            this.lbl2 = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.pcbox2 = new System.Windows.Forms.PictureBox();
             this.TFName = new System.Windows.Forms.TextBox();
@@ -92,12 +92,26 @@
             this.lblinstruction8 = new System.Windows.Forms.Label();
             this.lblinstruction9 = new System.Windows.Forms.Label();
             this.lblinstruction10 = new System.Windows.Forms.Label();
+            this.pcbox8 = new System.Windows.Forms.PictureBox();
+            this.lbl2 = new System.Windows.Forms.Label();
+            this.pcbox7 = new System.Windows.Forms.PictureBox();
+            this.lbl8 = new System.Windows.Forms.Label();
+            this.lblinstruction11 = new System.Windows.Forms.Label();
+            this.lbl10 = new System.Windows.Forms.Label();
+            this.lbl11 = new System.Windows.Forms.Label();
+            this.lbl9 = new System.Windows.Forms.Label();
+            this.lblinstruction12 = new System.Windows.Forms.Label();
+            this.lblIDPic = new System.Windows.Forms.Label();
+            this.txtboxPic = new System.Windows.Forms.TextBox();
+            this.lblinstruction13 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pcbox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbox7)).BeginInit();
             this.SuspendLayout();
             // 
             // pcbox1
@@ -115,31 +129,19 @@
             // 
             this.lbl1.AutoSize = true;
             this.lbl1.BackColor = System.Drawing.Color.Transparent;
-            this.lbl1.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl1.Font = new System.Drawing.Font("Tahoma", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl1.ForeColor = System.Drawing.Color.Salmon;
-            this.lbl1.Location = new System.Drawing.Point(350, 9);
+            this.lbl1.Location = new System.Drawing.Point(289, 12);
             this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(153, 39);
+            this.lbl1.Size = new System.Drawing.Size(228, 58);
             this.lbl1.TabIndex = 1;
             this.lbl1.Text = "RESUME";
-            // 
-            // lbl2
-            // 
-            this.lbl2.AutoSize = true;
-            this.lbl2.BackColor = System.Drawing.Color.Transparent;
-            this.lbl2.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2.ForeColor = System.Drawing.Color.Maroon;
-            this.lbl2.Location = new System.Drawing.Point(492, 39);
-            this.lbl2.Name = "lbl2";
-            this.lbl2.Size = new System.Drawing.Size(219, 39);
-            this.lbl2.TabIndex = 2;
-            this.lbl2.Text = "GENERATOR";
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(134, 129);
+            this.lblName.Location = new System.Drawing.Point(134, 130);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(52, 17);
             this.lblName.TabIndex = 3;
@@ -156,16 +158,16 @@
             // 
             // TFName
             // 
-            this.TFName.Location = new System.Drawing.Point(192, 129);
+            this.TFName.Location = new System.Drawing.Point(192, 130);
             this.TFName.Name = "TFName";
-            this.TFName.Size = new System.Drawing.Size(108, 20);
+            this.TFName.Size = new System.Drawing.Size(94, 20);
             this.TFName.TabIndex = 5;
             // 
             // lblAddress
             // 
             this.lblAddress.AutoSize = true;
             this.lblAddress.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddress.Location = new System.Drawing.Point(485, 130);
+            this.lblAddress.Location = new System.Drawing.Point(452, 133);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(65, 17);
             this.lblAddress.TabIndex = 6;
@@ -173,16 +175,16 @@
             // 
             // TAddress
             // 
-            this.TAddress.Location = new System.Drawing.Point(556, 128);
+            this.TAddress.Location = new System.Drawing.Point(523, 131);
             this.TAddress.Name = "TAddress";
-            this.TAddress.Size = new System.Drawing.Size(175, 20);
+            this.TAddress.Size = new System.Drawing.Size(159, 20);
             this.TAddress.TabIndex = 7;
             // 
             // lblZipCode
             // 
             this.lblZipCode.AutoSize = true;
             this.lblZipCode.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblZipCode.Location = new System.Drawing.Point(750, 129);
+            this.lblZipCode.Location = new System.Drawing.Point(710, 162);
             this.lblZipCode.Name = "lblZipCode";
             this.lblZipCode.Size = new System.Drawing.Size(71, 17);
             this.lblZipCode.TabIndex = 8;
@@ -190,16 +192,16 @@
             // 
             // TZIP
             // 
-            this.TZIP.Location = new System.Drawing.Point(818, 128);
+            this.TZIP.Location = new System.Drawing.Point(787, 159);
             this.TZIP.Name = "TZIP";
-            this.TZIP.Size = new System.Drawing.Size(119, 20);
+            this.TZIP.Size = new System.Drawing.Size(150, 20);
             this.TZIP.TabIndex = 9;
             // 
             // lblNumber
             // 
             this.lblNumber.AutoSize = true;
             this.lblNumber.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumber.Location = new System.Drawing.Point(134, 165);
+            this.lblNumber.Location = new System.Drawing.Point(134, 162);
             this.lblNumber.Name = "lblNumber";
             this.lblNumber.Size = new System.Drawing.Size(64, 17);
             this.lblNumber.TabIndex = 10;
@@ -207,9 +209,9 @@
             // 
             // TNumber
             // 
-            this.TNumber.Location = new System.Drawing.Point(204, 162);
+            this.TNumber.Location = new System.Drawing.Point(204, 159);
             this.TNumber.Name = "TNumber";
-            this.TNumber.Size = new System.Drawing.Size(260, 20);
+            this.TNumber.Size = new System.Drawing.Size(218, 20);
             this.TNumber.TabIndex = 11;
             // 
             // lbl3
@@ -228,7 +230,7 @@
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(503, 163);
+            this.lblEmail.Location = new System.Drawing.Point(451, 162);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(47, 17);
             this.lblEmail.TabIndex = 14;
@@ -236,7 +238,7 @@
             // 
             // TEmail
             // 
-            this.TEmail.Location = new System.Drawing.Point(556, 162);
+            this.TEmail.Location = new System.Drawing.Point(504, 159);
             this.TEmail.Name = "TEmail";
             this.TEmail.Size = new System.Drawing.Size(178, 20);
             this.TEmail.TabIndex = 15;
@@ -390,15 +392,15 @@
             this.lblinstruction4.Font = new System.Drawing.Font("Constantia", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblinstruction4.Location = new System.Drawing.Point(201, 519);
             this.lblinstruction4.Name = "lblinstruction4";
-            this.lblinstruction4.Size = new System.Drawing.Size(294, 13);
+            this.lblinstruction4.Size = new System.Drawing.Size(235, 13);
             this.lblinstruction4.TabIndex = 31;
-            this.lblinstruction4.Text = "Type your experiences, place N\\A to the boxes with no input.";
+            this.lblinstruction4.Text = "Type your experiences, leave it blank if no input.\r\n";
             // 
             // lblCompany1
             // 
             this.lblCompany1.AutoSize = true;
             this.lblCompany1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCompany1.Location = new System.Drawing.Point(134, 549);
+            this.lblCompany1.Location = new System.Drawing.Point(134, 551);
             this.lblCompany1.Name = "lblCompany1";
             this.lblCompany1.Size = new System.Drawing.Size(77, 17);
             this.lblCompany1.TabIndex = 32;
@@ -406,14 +408,14 @@
             // 
             // TC1
             // 
-            this.TC1.Location = new System.Drawing.Point(217, 546);
+            this.TC1.Location = new System.Drawing.Point(217, 548);
             this.TC1.Name = "TC1";
             this.TC1.Size = new System.Drawing.Size(150, 20);
             this.TC1.TabIndex = 33;
             // 
             // TC2
             // 
-            this.TC2.Location = new System.Drawing.Point(504, 546);
+            this.TC2.Location = new System.Drawing.Point(504, 548);
             this.TC2.Name = "TC2";
             this.TC2.Size = new System.Drawing.Size(150, 20);
             this.TC2.TabIndex = 35;
@@ -422,7 +424,7 @@
             // 
             this.lblCompany2.AutoSize = true;
             this.lblCompany2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCompany2.Location = new System.Drawing.Point(421, 549);
+            this.lblCompany2.Location = new System.Drawing.Point(421, 551);
             this.lblCompany2.Name = "lblCompany2";
             this.lblCompany2.Size = new System.Drawing.Size(77, 17);
             this.lblCompany2.TabIndex = 34;
@@ -430,7 +432,7 @@
             // 
             // TCDes1
             // 
-            this.TCDes1.Location = new System.Drawing.Point(137, 571);
+            this.TCDes1.Location = new System.Drawing.Point(137, 573);
             this.TCDes1.Multiline = true;
             this.TCDes1.Name = "TCDes1";
             this.TCDes1.Size = new System.Drawing.Size(230, 116);
@@ -438,7 +440,7 @@
             // 
             // TCDes2
             // 
-            this.TCDes2.Location = new System.Drawing.Point(424, 571);
+            this.TCDes2.Location = new System.Drawing.Point(424, 573);
             this.TCDes2.Multiline = true;
             this.TCDes2.Name = "TCDes2";
             this.TCDes2.Size = new System.Drawing.Size(230, 116);
@@ -446,7 +448,7 @@
             // 
             // TCDes3
             // 
-            this.TCDes3.Location = new System.Drawing.Point(707, 571);
+            this.TCDes3.Location = new System.Drawing.Point(707, 573);
             this.TCDes3.Multiline = true;
             this.TCDes3.Name = "TCDes3";
             this.TCDes3.Size = new System.Drawing.Size(230, 116);
@@ -454,7 +456,7 @@
             // 
             // TC3
             // 
-            this.TC3.Location = new System.Drawing.Point(787, 546);
+            this.TC3.Location = new System.Drawing.Point(787, 548);
             this.TC3.Name = "TC3";
             this.TC3.Size = new System.Drawing.Size(150, 20);
             this.TC3.TabIndex = 39;
@@ -463,7 +465,7 @@
             // 
             this.lblCompany3.AutoSize = true;
             this.lblCompany3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCompany3.Location = new System.Drawing.Point(704, 549);
+            this.lblCompany3.Location = new System.Drawing.Point(704, 551);
             this.lblCompany3.Name = "lblCompany3";
             this.lblCompany3.Size = new System.Drawing.Size(77, 17);
             this.lblCompany3.TabIndex = 38;
@@ -531,9 +533,9 @@
             this.lblinstruction5.Font = new System.Drawing.Font("Constantia", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblinstruction5.Location = new System.Drawing.Point(655, 211);
             this.lblinstruction5.Name = "lblinstruction5";
-            this.lblinstruction5.Size = new System.Drawing.Size(288, 13);
+            this.lblinstruction5.Size = new System.Drawing.Size(229, 13);
             this.lblinstruction5.TabIndex = 48;
-            this.lblinstruction5.Text = "Type at least 5 skills, place N\\A to the boxes with no input.";
+            this.lblinstruction5.Text = "Type at least 5 skills, leave it blank if no input.";
             // 
             // lblasterisk1
             // 
@@ -587,22 +589,24 @@
             // 
             // btnsaveJSON
             // 
-            this.btnsaveJSON.Location = new System.Drawing.Point(14, 596);
+            this.btnsaveJSON.BackColor = System.Drawing.Color.Tomato;
+            this.btnsaveJSON.Location = new System.Drawing.Point(17, 599);
             this.btnsaveJSON.Name = "btnsaveJSON";
             this.btnsaveJSON.Size = new System.Drawing.Size(92, 28);
             this.btnsaveJSON.TabIndex = 54;
             this.btnsaveJSON.Text = "JSON";
-            this.btnsaveJSON.UseVisualStyleBackColor = true;
+            this.btnsaveJSON.UseVisualStyleBackColor = false;
             this.btnsaveJSON.Click += new System.EventHandler(this.btnsaveJSON_Click);
             // 
             // btnsavePDF
             // 
-            this.btnsavePDF.Location = new System.Drawing.Point(14, 643);
+            this.btnsavePDF.BackColor = System.Drawing.Color.Tomato;
+            this.btnsavePDF.Location = new System.Drawing.Point(17, 643);
             this.btnsavePDF.Name = "btnsavePDF";
             this.btnsavePDF.Size = new System.Drawing.Size(92, 28);
             this.btnsavePDF.TabIndex = 55;
             this.btnsavePDF.Text = "PDF";
-            this.btnsavePDF.UseVisualStyleBackColor = true;
+            this.btnsavePDF.UseVisualStyleBackColor = false;
             this.btnsavePDF.Click += new System.EventHandler(this.btnsavePDF_Click);
             // 
             // pcbox3
@@ -618,30 +622,31 @@
             // 
             this.RTboxResume.Location = new System.Drawing.Point(12, 12);
             this.RTboxResume.Name = "RTboxResume";
-            this.RTboxResume.Size = new System.Drawing.Size(108, 432);
+            this.RTboxResume.Size = new System.Drawing.Size(109, 76);
             this.RTboxResume.TabIndex = 57;
             this.RTboxResume.Text = "";
             this.RTboxResume.Visible = false;
+            this.RTboxResume.TextChanged += new System.EventHandler(this.RTboxResume_TextChanged);
             // 
             // TMInitial
             // 
-            this.TMInitial.Location = new System.Drawing.Point(306, 129);
+            this.TMInitial.Location = new System.Drawing.Point(292, 131);
             this.TMInitial.Name = "TMInitial";
-            this.TMInitial.Size = new System.Drawing.Size(61, 20);
+            this.TMInitial.Size = new System.Drawing.Size(47, 20);
             this.TMInitial.TabIndex = 58;
             // 
             // TSName
             // 
-            this.TSName.Location = new System.Drawing.Point(373, 129);
+            this.TSName.Location = new System.Drawing.Point(345, 131);
             this.TSName.Name = "TSName";
-            this.TSName.Size = new System.Drawing.Size(91, 20);
+            this.TSName.Size = new System.Drawing.Size(77, 20);
             this.TSName.TabIndex = 59;
             // 
             // lblinstruction6
             // 
             this.lblinstruction6.AutoSize = true;
             this.lblinstruction6.Font = new System.Drawing.Font("Constantia", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblinstruction6.Location = new System.Drawing.Point(279, 113);
+            this.lblinstruction6.Location = new System.Drawing.Point(265, 114);
             this.lblinstruction6.Name = "lblinstruction6";
             this.lblinstruction6.Size = new System.Drawing.Size(21, 13);
             this.lblinstruction6.TabIndex = 60;
@@ -651,7 +656,7 @@
             // 
             this.lblinstruction7.AutoSize = true;
             this.lblinstruction7.Font = new System.Drawing.Font("Constantia", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblinstruction7.Location = new System.Drawing.Point(346, 113);
+            this.lblinstruction7.Location = new System.Drawing.Point(318, 115);
             this.lblinstruction7.Name = "lblinstruction7";
             this.lblinstruction7.Size = new System.Drawing.Size(21, 13);
             this.lblinstruction7.TabIndex = 61;
@@ -661,7 +666,7 @@
             // 
             this.lblinstruction8.AutoSize = true;
             this.lblinstruction8.Font = new System.Drawing.Font("Constantia", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblinstruction8.Location = new System.Drawing.Point(443, 113);
+            this.lblinstruction8.Location = new System.Drawing.Point(401, 115);
             this.lblinstruction8.Name = "lblinstruction8";
             this.lblinstruction8.Size = new System.Drawing.Size(21, 13);
             this.lblinstruction8.TabIndex = 62;
@@ -680,13 +685,145 @@
             // lblinstruction10
             // 
             this.lblinstruction10.AutoSize = true;
-            this.lblinstruction10.BackColor = System.Drawing.Color.LightSalmon;
-            this.lblinstruction10.Font = new System.Drawing.Font("Constantia", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblinstruction10.Location = new System.Drawing.Point(11, 570);
+            this.lblinstruction10.BackColor = System.Drawing.Color.IndianRed;
+            this.lblinstruction10.Font = new System.Drawing.Font("Lato", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblinstruction10.ForeColor = System.Drawing.Color.White;
+            this.lblinstruction10.Location = new System.Drawing.Point(6, 572);
             this.lblinstruction10.Name = "lblinstruction10";
-            this.lblinstruction10.Size = new System.Drawing.Size(51, 15);
+            this.lblinstruction10.Size = new System.Drawing.Size(39, 16);
             this.lblinstruction10.TabIndex = 64;
-            this.lblinstruction10.Text = "Save as:";
+            this.lblinstruction10.Text = "Save:";
+            // 
+            // pcbox8
+            // 
+            this.pcbox8.BackColor = System.Drawing.Color.Transparent;
+            this.pcbox8.Image = ((System.Drawing.Image)(resources.GetObject("pcbox8.Image")));
+            this.pcbox8.Location = new System.Drawing.Point(504, 26);
+            this.pcbox8.Name = "pcbox8";
+            this.pcbox8.Size = new System.Drawing.Size(46, 34);
+            this.pcbox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbox8.TabIndex = 66;
+            this.pcbox8.TabStop = false;
+            // 
+            // lbl2
+            // 
+            this.lbl2.AutoSize = true;
+            this.lbl2.BackColor = System.Drawing.Color.Transparent;
+            this.lbl2.Font = new System.Drawing.Font("Tahoma", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2.ForeColor = System.Drawing.Color.Maroon;
+            this.lbl2.Location = new System.Drawing.Point(538, 12);
+            this.lbl2.Name = "lbl2";
+            this.lbl2.Size = new System.Drawing.Size(327, 58);
+            this.lbl2.TabIndex = 2;
+            this.lbl2.Text = "GENERATOR";
+            // 
+            // pcbox7
+            // 
+            this.pcbox7.BackColor = System.Drawing.Color.LightSalmon;
+            this.pcbox7.Image = ((System.Drawing.Image)(resources.GetObject("pcbox7.Image")));
+            this.pcbox7.Location = new System.Drawing.Point(11, 12);
+            this.pcbox7.Name = "pcbox7";
+            this.pcbox7.Size = new System.Drawing.Size(108, 97);
+            this.pcbox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbox7.TabIndex = 67;
+            this.pcbox7.TabStop = false;
+            // 
+            // lbl8
+            // 
+            this.lbl8.AutoSize = true;
+            this.lbl8.BackColor = System.Drawing.Color.IndianRed;
+            this.lbl8.Font = new System.Drawing.Font("Lato", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbl8.Location = new System.Drawing.Point(8, 198);
+            this.lbl8.Name = "lbl8";
+            this.lbl8.Size = new System.Drawing.Size(63, 13);
+            this.lbl8.TabIndex = 68;
+            this.lbl8.Text = "How to use:";
+            // 
+            // lblinstruction11
+            // 
+            this.lblinstruction11.AutoSize = true;
+            this.lblinstruction11.BackColor = System.Drawing.Color.LightSalmon;
+            this.lblinstruction11.Font = new System.Drawing.Font("Constantia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblinstruction11.Location = new System.Drawing.Point(4, 228);
+            this.lblinstruction11.Name = "lblinstruction11";
+            this.lblinstruction11.Size = new System.Drawing.Size(118, 130);
+            this.lblinstruction11.TabIndex = 69;
+            this.lblinstruction11.Text = resources.GetString("lblinstruction11.Text");
+            // 
+            // lbl10
+            // 
+            this.lbl10.AutoSize = true;
+            this.lbl10.BackColor = System.Drawing.Color.Transparent;
+            this.lbl10.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl10.ForeColor = System.Drawing.Color.Salmon;
+            this.lbl10.Location = new System.Drawing.Point(18, 129);
+            this.lbl10.Name = "lbl10";
+            this.lbl10.Size = new System.Drawing.Size(91, 23);
+            this.lbl10.TabIndex = 70;
+            this.lbl10.Text = "RESUME";
+            // 
+            // lbl11
+            // 
+            this.lbl11.AutoSize = true;
+            this.lbl11.BackColor = System.Drawing.Color.Transparent;
+            this.lbl11.Font = new System.Drawing.Font("Tahoma", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl11.ForeColor = System.Drawing.Color.Maroon;
+            this.lbl11.Location = new System.Drawing.Point(5, 154);
+            this.lbl11.Name = "lbl11";
+            this.lbl11.Size = new System.Drawing.Size(115, 21);
+            this.lbl11.TabIndex = 71;
+            this.lbl11.Text = "GENERATOR";
+            // 
+            // lbl9
+            // 
+            this.lbl9.AutoSize = true;
+            this.lbl9.BackColor = System.Drawing.Color.IndianRed;
+            this.lbl9.Font = new System.Drawing.Font("Lato", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbl9.Location = new System.Drawing.Point(8, 379);
+            this.lbl9.Name = "lbl9";
+            this.lbl9.Size = new System.Drawing.Size(69, 13);
+            this.lbl9.TabIndex = 72;
+            this.lbl9.Text = "How to save:";
+            // 
+            // lblinstruction12
+            // 
+            this.lblinstruction12.AutoSize = true;
+            this.lblinstruction12.BackColor = System.Drawing.Color.LightSalmon;
+            this.lblinstruction12.Font = new System.Drawing.Font("Constantia", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblinstruction12.Location = new System.Drawing.Point(6, 410);
+            this.lblinstruction12.Name = "lblinstruction12";
+            this.lblinstruction12.Size = new System.Drawing.Size(115, 130);
+            this.lblinstruction12.TabIndex = 73;
+            this.lblinstruction12.Text = resources.GetString("lblinstruction12.Text");
+            // 
+            // lblIDPic
+            // 
+            this.lblIDPic.AutoSize = true;
+            this.lblIDPic.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIDPic.Location = new System.Drawing.Point(704, 133);
+            this.lblIDPic.Name = "lblIDPic";
+            this.lblIDPic.Size = new System.Drawing.Size(77, 17);
+            this.lblIDPic.TabIndex = 74;
+            this.lblIDPic.Text = "ID Pictrure:";
+            // 
+            // txtboxPic
+            // 
+            this.txtboxPic.Location = new System.Drawing.Point(787, 129);
+            this.txtboxPic.Name = "txtboxPic";
+            this.txtboxPic.Size = new System.Drawing.Size(150, 20);
+            this.txtboxPic.TabIndex = 75;
+            // 
+            // lblinstruction13
+            // 
+            this.lblinstruction13.AutoSize = true;
+            this.lblinstruction13.Font = new System.Drawing.Font("Constantia", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblinstruction13.Location = new System.Drawing.Point(835, 114);
+            this.lblinstruction13.Name = "lblinstruction13";
+            this.lblinstruction13.Size = new System.Drawing.Size(102, 13);
+            this.lblinstruction13.TabIndex = 76;
+            this.lblinstruction13.Text = "e.g. picture.jpg/jpeg";
             // 
             // ResumePDF
             // 
@@ -694,6 +831,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(959, 704);
+            this.Controls.Add(this.lblinstruction13);
+            this.Controls.Add(this.txtboxPic);
+            this.Controls.Add(this.lblIDPic);
+            this.Controls.Add(this.lblinstruction12);
+            this.Controls.Add(this.lbl9);
+            this.Controls.Add(this.lbl11);
+            this.Controls.Add(this.lbl10);
+            this.Controls.Add(this.lblinstruction11);
+            this.Controls.Add(this.lbl8);
+            this.Controls.Add(this.pcbox7);
+            this.Controls.Add(this.pcbox8);
+            this.Controls.Add(this.lbl2);
             this.Controls.Add(this.lblinstruction10);
             this.Controls.Add(this.lblinstruction9);
             this.Controls.Add(this.lblinstruction8);
@@ -753,7 +902,6 @@
             this.Controls.Add(this.lbl1);
             this.Controls.Add(this.pcbox1);
             this.Controls.Add(this.pcbox2);
-            this.Controls.Add(this.lbl2);
             this.Controls.Add(this.pcbox4);
             this.Controls.Add(this.pcbox5);
             this.Controls.Add(this.pcbox3);
@@ -767,6 +915,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pcbox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbox7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -776,7 +926,6 @@
 
         private System.Windows.Forms.PictureBox pcbox1;
         private System.Windows.Forms.Label lbl1;
-        private System.Windows.Forms.Label lbl2;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.PictureBox pcbox2;
         private System.Windows.Forms.TextBox TFName;
@@ -838,6 +987,18 @@
         private System.Windows.Forms.Label lblinstruction8;
         private System.Windows.Forms.Label lblinstruction9;
         private System.Windows.Forms.Label lblinstruction10;
+        private System.Windows.Forms.PictureBox pcbox8;
+        private System.Windows.Forms.Label lbl2;
+        private System.Windows.Forms.PictureBox pcbox7;
+        private System.Windows.Forms.Label lbl8;
+        private System.Windows.Forms.Label lblinstruction11;
+        private System.Windows.Forms.Label lbl10;
+        private System.Windows.Forms.Label lbl11;
+        private System.Windows.Forms.Label lbl9;
+        private System.Windows.Forms.Label lblinstruction12;
+        private System.Windows.Forms.Label lblIDPic;
+        private System.Windows.Forms.TextBox txtboxPic;
+        private System.Windows.Forms.Label lblinstruction13;
     }
 }
 
